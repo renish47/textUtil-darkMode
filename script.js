@@ -101,6 +101,7 @@ function clrScreen(){
   wordCountDisplay.innerText='0';
   charCountDisplay.innerText= '0';
   minsDisplay.innerText='0.00';
+  document.getElementById('endStatus').style.display = 'none';
 }
 
 
