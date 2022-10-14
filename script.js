@@ -44,7 +44,6 @@ function liveText(){
 
   //Minute to read
   let minToRead= wordCount/200;
-  minsDisplay.innerText = minToRead;
   let sec = (minToRead -parseInt(minToRead))*(0.60);
   let min = parseInt(minToRead) + parseInt(sec);
   let calcSec = Math.round(((sec-parseInt(sec))*100)+1);
@@ -52,8 +51,9 @@ function liveText(){
   preview.innerText = input.value;
   if(input.value==''){
    calcSec = 0;
+    minToRead = 0.00;
   }
-
+  minsDisplay.innerText = minToRead;
   approx.innerHTML = "<i>(Approximately "+min+" minutes "+calcSec+" seconds)</i>";
   
   
