@@ -18,6 +18,7 @@ function liveText(){
   //preview
   preview.innerText = input.value;
   if(input.value==''){
+    preview.innerText ='See here for the text preview';
     approx.style.display = 'none';
   }
   else{
@@ -44,6 +45,7 @@ function liveText(){
 
   //Minute to read
   let minToRead= wordCount/200;
+  minsDisplay.innerText = minToRead;
   let sec = (minToRead -parseInt(minToRead))*(0.60);
   let min = parseInt(minToRead) + parseInt(sec);
   let calcSec = Math.round(((sec-parseInt(sec))*100)+1);
@@ -51,9 +53,8 @@ function liveText(){
   preview.innerText = input.value;
   if(input.value==''){
    calcSec = 0;
-    minToRead = 0;
   }
-  minsDisplay.innerText = minToRead;
+
   approx.innerHTML = "<i>(Approximately "+min+" minutes "+calcSec+" seconds)</i>";
   
   
@@ -100,10 +101,10 @@ function removeSpace(){
 clrBtn.addEventListener('click',clrScreen);
 function clrScreen(){
   input.value ='';
-  preview.innerText='';
+  preview.innerText='See here for the text preview';
   wordCountDisplay.innerText='0';
   charCountDisplay.innerText= '0';
-  minsDisplay.innerText='0';
+  minsDisplay.innerText='0.00';
   approx.style.display = 'none';
 }
 
@@ -153,7 +154,7 @@ lightSwitch.addEventListener('change',(event)=>{
     document.getElementById('charCount').style.color = 'black'
     document.getElementById('wordCount').style.color = 'black'
     document.getElementById('min').style.color = 'black'
-    document.getElementById('table').style.color = 'white'
+
     document.getElementById('preview').style.color = 'black'
     document.getElementById('approx').style.color = 'black'
     document.getElementById('endStatus').style.color = 'black'
