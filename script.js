@@ -19,6 +19,10 @@ function liveText(){
   preview.innerText = input.value;
   if(input.value==''){
     preview.innerText ='See here for the text preview';
+    approx.style.display = 'none';
+  }
+  else{
+    approx.style.display = 'inline';
   }
 
   let inp = input.value;
@@ -101,7 +105,7 @@ function clrScreen(){
   wordCountDisplay.innerText='0';
   charCountDisplay.innerText= '0';
   minsDisplay.innerText='0.00';
-  document.getElementById('endStatus').style.display = 'none';
+  approx.style.display = 'none';
 }
 
 
