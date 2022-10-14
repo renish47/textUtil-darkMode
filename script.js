@@ -51,7 +51,7 @@ function liveText(){
   preview.innerText = input.value;
   if(input.value==''){
    calcSec = 0;
-    minToRead = 0.00;
+    minToRead = 0;
   }
   minsDisplay.innerText = minToRead;
   approx.innerHTML = "<i>(Approximately "+min+" minutes "+calcSec+" seconds)</i>";
@@ -103,7 +103,7 @@ function clrScreen(){
   preview.innerText='';
   wordCountDisplay.innerText='0';
   charCountDisplay.innerText= '0';
-  minsDisplay.innerText='0.00';
+  minsDisplay.innerText='0';
   approx.style.display = 'none';
 }
 
