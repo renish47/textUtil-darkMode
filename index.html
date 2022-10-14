@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Text Util</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light" id="nav">
+    <h2 id="icon">Text Util</h2>
+    <label class="switch">
+      <input type="checkbox" id="switch">
+      <span class="slider"></span>
+    </label>
+  </nav>
+  <br><br>
+  <div style="max-width: 1288px; margin: auto;">
+
+    <div class="container" style="width: 90%;">
+      <div class="row justify-content-start">
+        <div class="col-11 px-0"><label for="textarea"><h3 id="head">Enter your text here to Analyse</h3></label></div>
+        <div class="col-12 justify-content-center px-0"><textarea name="" id="input" cols="170" rows="7" style="width:100%;" placeholder="sample text"></textarea></div>
+        
+      </div>
+      <div class="row justify-content-start">
+        <button class=" btn btn-primary"  id="ucase">UPPERCASE</button>
+        <button class=" btn btn-primary"  id="lcase">lowercase</button>
+        <button class=" btn btn-primary"  id="cap">Capitalize</button>
+        <button class=" btn btn-primary"  id="remove">RemoveSpaces</button>
+        <button class=" btn btn-primary"  id="copy">Copy text</button>
+        <button  class=" btn btn-primary" id="clear">Clear</button>
+      </div>
+    </div>
+      <div class="table-responsive">
+        <table class="table border"id="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-10 results">
+                <span id="wordCount">0</span> Words
+                <span id="charCount" style="padding-left: 10px;">0</span> Characters
+                <span id="min" style="padding-left: 10px;">0.00</span> Minutes to read <span id="approx"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table border" id="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col" class=>Preview</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class=" preview" id="preview">See here for the text preview</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <div class="row">
+          <div class="col-11 endStatus" id="endStatus">Status: <i>Text Copied Succussfully </i></div>
+        </div>
+      </div>
+  </div>
+
+ 
+
+  
+
+ <script src="./script.js"></script> 
+</body>
+</html>
+
