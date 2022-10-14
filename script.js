@@ -18,7 +18,6 @@ function liveText(){
   //preview
   preview.innerText = input.value;
   if(input.value==''){
-    preview.innerText ='See here for the text preview';
     approx.style.display = 'none';
   }
   else{
@@ -101,7 +100,7 @@ function removeSpace(){
 clrBtn.addEventListener('click',clrScreen);
 function clrScreen(){
   input.value ='';
-  preview.innerText='See here for the text preview';
+  preview.innerText='';
   wordCountDisplay.innerText='0';
   charCountDisplay.innerText= '0';
   minsDisplay.innerText='0.00';
