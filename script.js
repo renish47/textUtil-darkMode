@@ -84,7 +84,7 @@ function capitalise(){
 copyBtn.addEventListener('click', copyText);
 function copyText(){
   navigator.clipboard.writeText(input.value);
-  setTimeout(()=>{document.getElementById('endStatus').style.display = 'inline'},0);
+  document.getElementById('endStatus').style.display = 'inline';
   setTimeout(()=>{document.getElementById('endStatus').style.display = 'none'},2000);
   
 
